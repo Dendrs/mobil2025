@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Mobil 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(120deg, #3498db, #8e44ad);
+        color: #fff;
+        text-align: center;
+      }
+      header {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      header .logo h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #f39c12;
+      }
+      #catalog {
+        padding: 50px 20px;
+      }
+      #catalog h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .car-item {
+        display: inline-block;
+        width: 300px;
+        margin: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+      .car-item img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .car-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      .car-item p {
+        margin-bottom: 15px;
+      }
+      .btn {
+        text-decoration: none;
+        background: #f39c12;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      .btn:hover {
+        background: #e67e22;
+      }
+      footer {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      #order {
+        padding: 50px 20px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      #order h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .order-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      .order-form label {
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      .order-form input,
+      .order-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .order-form button {
+        width: 100%;
+        padding: 10px;
+        background: #f39c12;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .order-form button:hover {
+        background: #e67e22;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Toko Mobil 2025</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="catalog.html">Katalog Mobil</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="catalog">
+      <h2>Katalog Mobil 2025</h2>
+      <div class="car-item">
+        <img src="mobil1.jpg" alt="Mobil A" />
+        <h3>Mobil A</h3>
+        <p>Harga: Rp 500.000.000</p>
+        <a href="belum" class="btn">Lihat Detail</a>
+      </div>
+      <div class="car-item">
+        <img src="mobil2.jpg" alt="Mobil B" />
+        <h3>Mobil B</h3>
+        <p>Harga: Rp 600.000.000</p>
+        <a href="details.html?id=2" class="btn">Lihat Detail</a>
+      </div>
+      <div class="car-item">
+        <img src="mobil3.jpg" alt="Mobil C" />
+        <h3>Mobil C</h3>
+        <p>Harga: Rp 700.000.000</p>
+        <a href="details.html?id=3" class="btn">Lihat Detail</a>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Formulir Pemesanan</h2>
+      <div class="order-form">
+        <form action="#" method="post">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+          <label for="car">Pilih Mobil</label>
+          <select id="car" name="car" required>
+            <option value="">-- Pilih Mobil --</option>
+            <option value="mobil_a">Mobil A</option>
+            <option value="mobil_b">Mobil B</option>
+            <option value="mobil_c">Mobil C</option>
+          </select>
+
+          <label for="message">Pesan Tambahan</label>
+          <input type="text" id="message" name="message" placeholder="Masukkan pesan tambahan" />
+
+          <button type="submit">Kirim Pesanan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Toko Mobil Kami | Semua Hak Dilindungi</p>
+    </footer>
+  </body>
+</html>

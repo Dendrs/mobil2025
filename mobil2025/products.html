@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #1c1c1c, #444);
+        color: #f8f9fa;
+      }
+
+      header {
+        background: #212529;
+        color: #fff;
+        padding: 10px 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li a {
+        color: #adb5bd;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+        color: #f8f9fa;
+      }
+
+      #products {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      #products li {
+        background: #343a40;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      #products li img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #212529;
+        color: #adb5bd;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Produk Kami</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="products">
+        <h2>Daftar Produk</h2>
+        <ul>
+          <li>
+            <h3>Mobil A</h3>
+            <p>Harga: Rp5.000.000.000</p>
+            <img src="mobil1.jpg" alt="Gambar Mobil A" />
+          </li>
+          <li>
+            <h3>Mobil B</h3>
+            <p>Harga: Rp6.000.000.000</p>
+            <img src="mobil2.jpg" alt="Gambar Mobil B" />
+          </li>
+          <li>
+            <h3>Mobil C</h3>
+            <p>Harga: Rp7.000.000.000</p>
+            <img src="mobil3.jpg" alt="Gambar Mobil C" />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Penjualan Mobil. Semua hak cipta dilindungi.</p>
+    </footer>
+  </body>
+</html>
